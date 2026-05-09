@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Energy Intel | Secure Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* --- CALM WATERFALL / MOUNTAIN BACKGROUND --- */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #ffffff;
+            line-height: 1.7;
+            /* Swapped to calm waterfall/mountain background */
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), 
+                        url('https://images.pexels.com/photos/3274903/pexels-photo-3274903.jpeg?auto=compress&cs=tinysrgb&w=1920') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* --- HEADER & NAVIGATION --- */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #00f2ff;
+            padding-bottom: 40px;
+            margin-bottom: 60px;
+        }
+
+        h1 { font-size: 2.5rem; font-weight: 900; letter-spacing: -1px; text-transform: uppercase; }
+        .status-badge { color: #00f2ff; font-family: monospace; font-size: 0.9rem; font-weight: bold; border: 1px solid #00f2ff; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-top: 10px; }
+
+        /* --- CONTENT MODULES --- */
+        .module {
+            background: rgba(23, 28, 38, 0.9);
+            border-radius: 24px;
+            padding: 35px;
+            margin-bottom: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 { font-size: 1.8rem; color: #00f2ff; margin-bottom: 20px; border-left: 5px solid #00f2ff; padding-left: 15px; }
+        
+        .featured-image {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            margin: 25px 0;
+            border: 1px solid rgba(0, 242, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 242, 255, 0.1);
+        }
+
+        p { font-size: 1.1rem; color: #cbd5e1; margin-bottom: 20px; }
+        b { color: #ffffff; }
+
+        .tech-data {
+            background: rgba(0, 242, 255, 0.03);
+            padding: 20px;
+            border-radius: 12px;
+            list-style: none;
+        }
+
+        .tech-data li { margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: flex-start; gap: 10px; }
+        .tech-data li::before { content: "▹"; color: #00f2ff; font-weight: bold; }
+
+        /* --- 10-STAR RATING SYSTEM --- */
+        .rating-box {
+            text-align: center;
+            background: #1e293b;
+            padding: 40px 20px;
+            border-radius: 24px;
+            border: 2px solid #00f2ff;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            flex-direction: row-reverse;
+            margin: 25px 0;
+        }
+
+        .stars input { display: none; }
+        .stars label {
+            font-size: 2.5rem;
+            color: #475569;
+            cursor: pointer;
+            transition: 0.2s;
+            padding: 0 2px;
+        }
+
+        .stars label:hover,
+        .stars label:hover ~ label,
+        .stars input:checked ~ label {
+            color: #fbbf24;
+            text-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
+        }
+
+        textarea {
+            width: 100%;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            color: white;
+            padding: 15px;
+            height: 100px;
+            margin-bottom: 20px;
+            font-family: inherit;
+        }
+
+        .btn {
+            background: #00f2ff;
+            color: #0f172a;
+            border: none;
+            width: 100%;
+            padding: 18px;
+            border-radius: 12px;
+            font-weight: 900;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #00dce8; transform: translateY(-2px); }
+
+        footer { text-align: center; color: #64748b; padding-top: 40px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Advanced Energy Portal</h1>
+            <div class="status-badge">SYSTEM STATUS: OPTIMIZED V5.1</div>
+        </header>
+
+        <!-- MODULE 1: SOLAR -->
+        <article class="module">
+            <h2>01. Photovoltaic Systems</h2>
+            <p>Solar energy works through the <b>Photoelectric Effect</b>. When photons (light particles) hit a solar panel, they strike a semiconductor—usually <b>Silicon</b>. This silicon is "doped" with impurities to create a P-N junction, which acts like a one-way hill for electrons.</p>
+
+            <img src="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1200" class="featured-image" alt="Close up of high-tech solar panels reflecting the sun">
+
+            <p>The energy from the sun knocks electrons loose from their atoms. Because of the internal electric field, these electrons are forced to flow in one direction, creating <b>Direct Current (DC)</b>. A device called an <b>Inverter</b> then converts this into Alternating Current (AC) for your home.</p>
+
+            <ul class="tech-data">
+                <li><b>Doping Process:</b> Phosphorus is added to the top layer (N-type) and Boron to the bottom (P-type) to create the flow.</li>
+                <li><b>Efficiency:</b> High-end monocrystalline panels now reach over 22% efficiency.</li>
+            </ul>
+        </article>
+
+        <!-- MODULE 2: WIND TURBINES -->
+        <article class="module">
+            <h2>02. Wind Turbine Aerodynamics</h2>
+            <p>It’s a common mistake to think wind "pushes" turbine blades like a sail. In reality, they work on <b>Aerodynamic Lift</b>, exactly like an airplane wing. The air moves faster over the curved top of the blade, creating low pressure that "sucks" the blade forward.</p>
+
+            <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=1200" class="featured-image" alt="Massive white wind turbines standing in a field against a blue sky">
+
+            <p>This rotational energy is sent into a <b>Gearbox</b> that steps up the slow rotation of the blades (about 15 RPM) to over 1,500 RPM. This high-speed shaft spins a <b>Generator</b> where magnets and copper coils create a massive flow of electrons.</p>
+
+            <ul class="tech-data">
+                <li><b>Yaw Drive:</b> A computer system that rotates the entire top of the turbine to face the wind.</li>
+                <li><b>Blade Pitch:</b> The ability to twist the blades to capture more wind or "feather" them to stop safely during a storm.</li>
+            </ul>
+        </article>
+
+        <!-- MODULE 3: ENVIRONMENTAL CRISIS -->
+        <article class="module">
+            <h2 style="color: #ff4d4d; border-color: #ff4d4d;">03. Fossil Fuel Destruction</h2>
+            <p>Non-renewables like coal and oil are stored "ancient sunlight" in carbon form. Burning them releases millions of tons of <b>CO2</b>, which traps heat in our atmosphere like a greenhouse.</p>
+
+            <img src="https://images.pexels.com/photos/2566581/pexels-photo-2566581.jpeg?auto=compress&cs=tinysrgb&w=1200" class="featured-image" alt="Industrial factory chimneys releasing thick smoke into the atmosphere" style="border-color: rgba(255, 77, 77, 0.3);">
+
+            <p>This results in <b>Ocean Acidification</b>. As the oceans absorb the CO2, the water becomes acidic, dissolving the shells of sea creatures and killing the coral reefs that provide 25% of all marine life's habitat.</p>
+        </article>
+
+        <!-- 10-STAR RATING -->
+        <div class="rating-box">
+            <h2>Rate This Technical Review</h2>
+            <p>Did this fix the image issue and provide enough detail?</p>
+            <div class="stars">
+                <input type="radio" name="star" id="s10"><label for="s10">★</label>
+                <input type="radio" name="star" id="s9"><label for="s9">★</label>
+                <input type="radio" name="star" id="s8"><label for="s8">★</label>
+                <input type="radio" name="star" id="s7"><label for="s7">★</label>
+                <input type="radio" name="star" id="s6"><label for="s6">★</label>
+                <input type="radio" name="star" id="s5"><label for="s5">★</label>
+                <input type="radio" name="star" id="s4"><label for="s4">★</label>
+                <input type="radio" name="star" id="s3"><label for="s3">★</label>
+                <input type="radio" name="star" id="s2"><label for="s2">★</label>
+                <input type="radio" name="star" id="s1"><label for="s1">★</label>
+            </div>
+            <textarea placeholder="Tell me what other machines you want me to explain next..."></textarea>
+            <button class="btn" onclick="alert('Submission received! Data Logged.')">Submit Update</button>
+        </div>
+
+        <footer>
+            <p>SAM.CODER // ENERGY ARCHIVE 2026</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
