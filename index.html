@@ -13,7 +13,6 @@
             font-family: 'Inter', sans-serif;
             color: #ffffff;
             line-height: 1.7;
-            /* Swapped to calm waterfall/mountain background */
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)), 
                         url('https://images.pexels.com/photos/3274903/pexels-photo-3274903.jpeg?auto=compress&cs=tinysrgb&w=1920') no-repeat center center fixed;
             background-size: cover;
@@ -26,7 +25,6 @@
             padding: 40px 20px;
         }
 
-        /* --- HEADER & NAVIGATION --- */
         header {
             text-align: center;
             border-bottom: 2px solid #00f2ff;
@@ -37,7 +35,6 @@
         h1 { font-size: 2.5rem; font-weight: 900; letter-spacing: -1px; text-transform: uppercase; }
         .status-badge { color: #00f2ff; font-family: monospace; font-size: 0.9rem; font-weight: bold; border: 1px solid #00f2ff; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-top: 10px; }
 
-        /* --- CONTENT MODULES --- */
         .module {
             background: rgba(23, 28, 38, 0.9);
             border-radius: 24px;
@@ -71,7 +68,6 @@
         .tech-data li { margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: flex-start; gap: 10px; }
         .tech-data li::before { content: "▹"; color: #00f2ff; font-weight: bold; }
 
-        /* --- 10-STAR RATING SYSTEM --- */
         .rating-box {
             text-align: center;
             background: #1e293b;
@@ -138,53 +134,75 @@
         
         <header>
             <h1>Advanced Energy Portal</h1>
-            <div class="status-badge">SYSTEM STATUS: OPTIMIZED V5.1</div>
+            <div class="status-badge">SYSTEM STATUS: ULTIMATE EDITION</div>
         </header>
 
-        <!-- MODULE 1: SOLAR -->
         <article class="module">
             <h2>01. Photovoltaic Systems</h2>
             <p>Solar energy works through the <b>Photoelectric Effect</b>. When photons (light particles) hit a solar panel, they strike a semiconductor—usually <b>Silicon</b>. This silicon is "doped" with impurities to create a P-N junction, which acts like a one-way hill for electrons.</p>
 
-            <img src="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1200" class="featured-image" alt="Close up of high-tech solar panels reflecting the sun">
+            <img src="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=1200" class="featured-image" alt="High-tech solar panels">
 
-            <p>The energy from the sun knocks electrons loose from their atoms. Because of the internal electric field, these electrons are forced to flow in one direction, creating <b>Direct Current (DC)</b>. A device called an <b>Inverter</b> then converts this into Alternating Current (AC) for your home.</p>
+            <p>The energy from the sun knocks electrons loose from their atoms. Because of the internal electric field, these electrons are forced to flow in one direction, creating <b>Direct Current (DC)</b>.</p>
 
             <ul class="tech-data">
-                <li><b>Doping Process:</b> Phosphorus is added to the top layer (N-type) and Boron to the bottom (P-type) to create the flow.</li>
-                <li><b>Efficiency:</b> High-end monocrystalline panels now reach over 22% efficiency.</li>
+                <li><b>Doping:</b> Phosphorus (N-type) and Boron (P-type) create the electrical flow.</li>
+                <li><b>Efficiency:</b> Modern panels reach over 22% efficiency.</li>
             </ul>
         </article>
 
-        <!-- MODULE 2: WIND TURBINES -->
         <article class="module">
             <h2>02. Wind Turbine Aerodynamics</h2>
-            <p>It’s a common mistake to think wind "pushes" turbine blades like a sail. In reality, they work on <b>Aerodynamic Lift</b>, exactly like an airplane wing. The air moves faster over the curved top of the blade, creating low pressure that "sucks" the blade forward.</p>
+            <p>Turbines work on <b>Aerodynamic Lift</b>, exactly like an airplane wing. The air moves faster over the curved top of the blade, creating low pressure that "sucks" the blade forward.</p>
 
-            <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=1200" class="featured-image" alt="Massive white wind turbines standing in a field against a blue sky">
+            <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=1200" class="featured-image" alt="Wind turbines">
 
-            <p>This rotational energy is sent into a <b>Gearbox</b> that steps up the slow rotation of the blades (about 15 RPM) to over 1,500 RPM. This high-speed shaft spins a <b>Generator</b> where magnets and copper coils create a massive flow of electrons.</p>
+            <p>This rotational energy is sent into a <b>Gearbox</b> that steps up the rotation to over 1,500 RPM to spin a high-speed Generator.</p>
 
             <ul class="tech-data">
-                <li><b>Yaw Drive:</b> A computer system that rotates the entire top of the turbine to face the wind.</li>
-                <li><b>Blade Pitch:</b> The ability to twist the blades to capture more wind or "feather" them to stop safely during a storm.</li>
+                <li><b>Yaw Drive:</b> Rotates the turbine head to face the wind direction.</li>
+                <li><b>Blade Pitch:</b> Twists the blades to control speed and safety.</li>
             </ul>
         </article>
 
-        <!-- MODULE 3: ENVIRONMENTAL CRISIS -->
         <article class="module">
-            <h2 style="color: #ff4d4d; border-color: #ff4d4d;">03. Fossil Fuel Destruction</h2>
-            <p>Non-renewables like coal and oil are stored "ancient sunlight" in carbon form. Burning them releases millions of tons of <b>CO2</b>, which traps heat in our atmosphere like a greenhouse.</p>
+            <h2>03. Nuclear Fission Technology</h2>
+            <p>Nuclear energy is harvested through <b>Nuclear Fission</b>, where the nucleus of a heavy atom (usually Uranium-235) is split into two smaller nuclei. This split releases a staggering amount of heat energy.</p>
 
-            <img src="https://images.pexels.com/photos/2566581/pexels-photo-2566581.jpeg?auto=compress&cs=tinysrgb&w=1200" class="featured-image" alt="Industrial factory chimneys releasing thick smoke into the atmosphere" style="border-color: rgba(255, 77, 77, 0.3);">
+            <img src="https://images.pexels.com/photos/258447/pexels-photo-258447.jpeg?auto=compress&cs=tinysrgb&w=1200" class="featured-image" alt="Nuclear Power Plant">
 
-            <p>This results in <b>Ocean Acidification</b>. As the oceans absorb the CO2, the water becomes acidic, dissolving the shells of sea creatures and killing the coral reefs that provide 25% of all marine life's habitat.</p>
+            <p>In a reactor, this heat boils water into high-pressure steam. That steam spins massive turbines connected to electricity generators. Unlike fossil fuels, this process creates <b>zero</b> carbon emissions.</p>
+
+            <ul class="tech-data">
+                <li><b>Control Rods:</b> Made of Boron or Cadmium, these absorb neutrons to slow down the reaction if it gets too hot.</li>
+                <li><b>Energy Density:</b> One tiny uranium pellet produces as much energy as a ton of coal.</li>
+            </ul>
         </article>
 
-        <!-- 10-STAR RATING -->
+        <article class="module">
+            <h2>04. Geothermal: Earth's Core Power</h2>
+            <p>Geothermal energy is a 24/7 clean source that uses the <b>internal heat of the Earth</b>. Deep below the crust, the earth is naturally hot due to the radioactive decay of minerals and leftover heat from the planet's formation.</p>
+
+            <img src="https://images.pexels.com/photos/1683333/pexels-photo-1683333.jpeg?auto=compress&cs=tinysrgb&w=1200" class="featured-image" alt="Geothermal Steam Plant">
+
+            <p>By drilling deep wells, we can tap into underground reservoirs of steam or hot water. This steam is piped directly to the surface to drive turbines, providing a constant stream of energy regardless of weather.</p>
+
+            <ul class="tech-data">
+                <li><b>Binary Cycle:</b> Uses hot water to heat a second fluid with a lower boiling point, allowing power generation even at lower temperatures.</li>
+                <li><b>Zero Intermittency:</b> Unlike solar or wind, geothermal provides power 100% of the time.</li>
+            </ul>
+        </article>
+
+        <article class="module">
+            <h2 style="color: #ff4d4d; border-color: #ff4d4d;">05. Fossil Fuel Destruction</h2>
+            <p>Burning coal and oil releases <b>CO2</b>, creating a thermal blanket that leads to <b>Ocean Acidification</b>, dissolving marine life shells and bleaching coral reefs.</p>
+
+            <img src="https://images.pexels.com/photos/2566581/pexels-photo-2566581.jpeg?auto=compress&cs=tinysrgb&w=1200" class="featured-image" alt="Industrial pollution">
+        </article>
+
         <div class="rating-box">
-            <h2>Rate This Technical Review</h2>
-            <p>Did this fix the image issue and provide enough detail?</p>
+            <h2>Final Presentation Rating</h2>
+            <p>How do the new Nuclear and Geothermal sections look?</p>
             <div class="stars">
                 <input type="radio" name="star" id="s10"><label for="s10">★</label>
                 <input type="radio" name="star" id="s9"><label for="s9">★</label>
@@ -197,12 +215,12 @@
                 <input type="radio" name="star" id="s2"><label for="s2">★</label>
                 <input type="radio" name="star" id="s1"><label for="s1">★</label>
             </div>
-            <textarea placeholder="Tell me what other machines you want me to explain next..."></textarea>
-            <button class="btn" onclick="alert('Submission received! Data Logged.')">Submit Update</button>
+            <textarea placeholder="Feedback on the new sections..."></textarea>
+            <button class="btn" onclick="alert('Submission received! Best of luck, Samridh!')">Submit Final Update</button>
         </div>
 
         <footer>
-            <p>SAM.CODER // ENERGY ARCHIVE 2026</p>
+            <p>SAM.CODER // ENERGY ARCHIVE 2026 // BHARAT COMMAND</p>
         </footer>
 
     </div>
